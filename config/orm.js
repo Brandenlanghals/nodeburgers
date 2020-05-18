@@ -1,7 +1,5 @@
 
-// Here is the O.R.M. where you write functions that takes inputs and conditions
-// and turns them into database commands like SQL.
-
+// ORM USED TO CONVERT FUNCTIONS TO WORK WITH SQL DB
 var connection = require("./connection.js");
 
 //Prints ?'s based on input

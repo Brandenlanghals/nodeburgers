@@ -18,7 +18,6 @@ router.get("/burgers", function(req, res) {
 });
 
 // post route -> back to index
-  //hint: burger.create
 router.post('/burgers/create',function(req,res){
   burger.create(req.body.burger_name, function(result){
     res.redirect('/');
@@ -26,7 +25,6 @@ router.post('/burgers/create',function(req,res){
 });
 
 // put route -> back to index
-  //Put route to update burger then redirects to index
 router.put("/burgers/:id", function (req, res) {
   burger.update(req.params.id, function (result) {
     res.sendStatus(200);
