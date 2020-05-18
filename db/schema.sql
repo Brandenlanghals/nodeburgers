@@ -6,9 +6,10 @@ DROP TABLE IF EXISTS burgers;
 
 -- Create the burgers table which will contain     id(int and is the primarykey), burger_name(varchar), devoured(boolean)
 CREATE TABLE burgers (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT AUTO_INCREMENT NOT NULL,
 	burger_name VARCHAR( 255) NOT NULL,
 	devoured BOOL DEFAULT FALSE,
+	createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
     
 );
